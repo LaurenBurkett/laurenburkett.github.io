@@ -1,73 +1,205 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Lauren Burkett: Professional Summary</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+    <meta name="description" content="Lauren Burkett — Data Analyst and Cloud Data Engineer. Healthcare analytics, data visualization, Python, SQL, and cloud infrastructure.">
+    <meta name="author" content="Lauren Burkett">
+    <title>Lauren Burkett | Data Analyst &amp; Cloud Data Engineer</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <script>
       if (window.location.href.indexOf("christmas") > -1) {
-          window.location.href = "https://forms.gle/b6seih51KnX8qzG99"; 
+          window.location.href = "https://forms.gle/b6seih51KnX8qzG99";
       }
     </script>
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+      html {
+        scroll-behavior: smooth;
       }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+      body {
+        background-image: url('./background.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+        box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+        min-height: 100vh;
+      }
+
+      .cover-container {
+        max-width: 42em;
+      }
+
+      .nav-masthead .nav-link {
+        padding: .25rem 0;
+        font-weight: 700;
+        color: rgba(255, 255, 255, .5);
+        background-color: transparent;
+        border-bottom: .25rem solid transparent;
+      }
+
+      .nav-masthead .nav-link:hover,
+      .nav-masthead .nav-link:focus {
+        border-bottom-color: rgba(255, 255, 255, .25);
+        color: rgba(255, 255, 255, .85);
+      }
+
+      .nav-masthead .nav-link + .nav-link {
+        margin-left: 1rem;
+      }
+
+      .nav-masthead .active {
+        color: #fff;
+        border-bottom-color: #fff;
+      }
+
+      .skill-badge {
+        display: inline-block;
+        padding: .3rem .75rem;
+        margin: .25rem;
+        border: 1px solid rgba(255,255,255,.4);
+        border-radius: 2rem;
+        font-size: .85rem;
+        color: rgba(255,255,255,.9);
+        background: rgba(255,255,255,.1);
+        text-shadow: none;
+      }
+
+      .viz-section {
+        background: rgba(0, 0, 0, .65);
+        border-top: 1px solid rgba(255,255,255,.15);
+        padding: 3rem 1.5rem;
+      }
+
+      .viz-section h2 {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: .5rem;
+        text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+      }
+
+      .viz-section .viz-description {
+        color: rgba(255,255,255,.75);
+        max-width: 680px;
+        margin: 0 auto 1.5rem;
+        text-shadow: none;
+        font-size: .95rem;
+      }
+
+      .viz-frame-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: 0 .5rem 2rem rgba(0,0,0,.6);
+        border: 1px solid rgba(255,255,255,.2);
+      }
+
+      .viz-frame-wrapper iframe {
+        display: block;
+        width: 100%;
+        height: 680px;
+        border: none;
+      }
+
+      .viz-open-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: rgba(255,255,255,.65);
+        font-size: .875rem;
+        text-decoration: none;
+        text-shadow: none;
+      }
+
+      .viz-open-link:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      .btn-forest {
+        background-color: #2d6a4f;
+        border-color: #2d6a4f;
+        color: #fff;
+        text-shadow: none;
+      }
+
+      .btn-forest:hover,
+      .btn-forest:focus {
+        background-color: #1b4332;
+        border-color: #1b4332;
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .viz-frame-wrapper iframe {
+          height: 420px;
         }
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="./css/cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-image" style="
-  background-image: url('./background.jpg');
-  height: 100vh;
-">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h1 class="float-md-start mb-0">Lauren Burkett</h1>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" target="_blank" href="https://github.com/LaurenBurkett">GitHub</a>
-        <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/lauren-burkett-5b3258a6">LinkedIn</a>
-      </nav>
+  <body class="d-flex flex-column text-center text-white">
+
+    <!-- Hero section -->
+    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column" style="min-height: 100vh;">
+      <header class="mb-auto">
+        <div>
+          <h1 class="float-md-start mb-0">Lauren Burkett</h1>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#visualization">Featured Project</a>
+            <a class="nav-link" target="_blank" href="https://github.com/LaurenBurkett">GitHub</a>
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/lauren-burkett-5b3258a6">LinkedIn</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-3">
+        <h3>About Me</h3>
+        <p class="lead">Data professional with expertise in analytics, visualization, and healthcare informatics. Currently working as a data analyst in the healthcare industry, building toward cloud data engineering and a future doctoral program.</p>
+        <p class="lead mb-3">Experienced with Python, SQL, cloud platforms, and end-to-end data pipeline development — from raw data to interactive dashboards.</p>
+
+        <div class="mb-4">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">Data Visualization</span>
+          <span class="skill-badge">Cloud Data Engineering</span>
+          <span class="skill-badge">Healthcare Analytics</span>
+          <span class="skill-badge">ETL / Data Pipelines</span>
+        </div>
+
+        <p class="lead">
+          <a href="https://drive.google.com/file/d/1vygSVIh0WSg8nSwSESeMNxjODpic3hev/view?usp=sharing" target="_blank" class="btn btn-lg btn-forest fw-bold">Resume</a>
+        </p>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <p>Data Analyst &amp; Cloud Data Engineer &mdash; <a href="#visualization" class="text-white-50">See my work &darr;</a></p>
+      </footer>
     </div>
-  </header>
 
-  <main class="px-3">
-    <h3>About Me</h3>
-    <p class="lead">I am a data professional with a variety of interests and several degrees. Currently working at a mid-level data analyst position in the healthcare industry. I am pursuing the skillset required to tackle my future doctoral program.</p>
-    <p class="lead">
+    <!-- Visualization section -->
+    <section id="visualization" class="viz-section w-100">
+      <h2>Featured Project</h2>
+      <p class="viz-description">
+        An interactive AI &amp; Data Center infrastructure visualization exploring cloud resource allocation, capacity planning, and data flow across distributed systems. Built to demonstrate data engineering and visualization skills relevant to modern cloud environments.
+      </p>
+      <div class="viz-frame-wrapper">
+        <iframe
+          src="https://laurenburkett.com/ai-Data-Center-Visualization/"
+          title="AI Data Center Visualization"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+      <a href="https://laurenburkett.com/ai-Data-Center-Visualization/" target="_blank" class="viz-open-link">
+        Open in full page &rarr;
+      </a>
+    </section>
 
-      <a href="https://drive.google.com/file/d/1vygSVIh0WSg8nSwSESeMNxjODpic3hev/view?usp=sharing" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Resume</a>
-    </p>
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Made with Bootstrap 5. I know a little about Python and Javascript as well.</p>
-  </footer>
-</div>
-
-
-    
   </body>
 </html>
